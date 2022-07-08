@@ -23,7 +23,7 @@ const PostViewPage: NextPageWithLayout = () => {
   return (
     <>
       <h1>{data.title}</h1>
-      <em>Created {data.createdAt.toLocaleDateString('en-us')}</em>
+      <em>Created {data.updatedAt.toLocaleDateString('en-in')}</em>
 
       <p>{data.body}</p>
 

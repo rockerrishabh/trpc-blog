@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build:1-migrate": "prisma migrate deploy",
-    "build": "next build:*",
+    "build": "next build",
     "db-migrate-dev": "yarn prisma migrate dev",
     "start": "next start",
     "lint": "next lint",

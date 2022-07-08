@@ -26,12 +26,10 @@ const Home: NextPageWithLayout = () => {
         {postsQuery.status === 'loading' && '(loading)'}
       </h2>
       {postsQuery.data?.map((item) => (
-        <Link href={`/post/${item.id}`}>
-          <article className="cursor-pointer" key={item.id}>
-            <h3>{item.title}</h3>
-            <p>{item.body}</p>
-          </article>
-        </Link>
+        <article className="cursor-pointer" key={item.id}>
+          <h3>{item.title}</h3>
+          <p>{item.body}</p>
+        </article>
       ))}
       <br />
       <form
